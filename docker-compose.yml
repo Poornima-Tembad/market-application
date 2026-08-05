@@ -1,0 +1,24 @@
+version: "3.9"
+
+services:
+
+  backend:
+    build: ./server
+    container_name: textrade-backend
+    ports:
+      - "5000:5000"
+    environment:
+    
+      MONGODB_URI: ${MONGODB_URI}
+      JWT_SECRET: ${JWT_SECRET}
+      PORT: 5000
+    restart: always
+
+  frontend:
+    build: ./client
+    container_name: textrade-frontend
+    ports:
+      - "80:3000"
+    depends_on:
+      - backend
+    restart: always

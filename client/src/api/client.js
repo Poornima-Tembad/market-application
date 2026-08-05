@@ -1,4 +1,6 @@
-const API_BASE = '/api';
+const API_BASE =
+    import.meta.env.VITE_API_URL ||
+    "http://44.255.68.238:5000/api";
 
 export async function api(endpoint, options = {}) {
   const token = localStorage.getItem('token');
