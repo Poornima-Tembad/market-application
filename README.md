@@ -206,7 +206,7 @@ Add screenshots here.
 
 GitHub: https://github.com/Poornima-Tembad
 
-LinkedIn: *(Add your LinkedIn profile here)*
+LinkedIn: https://www.linkedin.com/in/poornima-tembad-390342311
 
 ---
 
